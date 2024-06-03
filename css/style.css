@@ -597,28 +597,148 @@ footer h2 {
     font-size: 12px;
   }
 
+@media screen and (max-width: 1280px){
+    header {
+        padding: 4vh;
+    }
 
-@media screen and (max-width: 768px) {
-    .skills-icons svg{
-        width: 35px;
-        height: 35px;
+    header nav ul li {
+        margin: 0 20px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
     }
     .box-projects .grid-box {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
 
     }
-
-
+    .box-contact {
+        width: 70vw;
+        height: auto;
+    }
+    .input-group input#fname,
+    .input-group input#email,
+    .input-group input#asunto,
+    .input-group textarea {
+        width: 100%;
+    }
+    #contact form {
+        width: 90%;
+        height: auto;
+    }
 }
+@media screen and (max-width: 768px) {
+    .box-header {
+        padding: 3vh;
+    }
 
-@media screen and (max-width: 480px) {
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    header nav ul li a {
+        font-size: 15px;
+    }
+    .box-home .left-box {
+        display: none;
+    }
+    .skills-icons{
+        margin: 10px;
+    }
     .skills-icons svg{
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
     .box-projects .grid-box {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
+
+    }
+
+    .box-contact {
+        width: 80vw;
+        height: auto;
+        padding: 15px;
+    }
+    #contact form {
+        width: 100%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-group input#fname,
+    .input-group input#email,
+    .input-group input#asunto,
+    .input-group textarea {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .box-header {
+        padding: 2vh;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+    .box-home .left-box {
+        display: none;
+    }
+    .skills-icons{
+        margin: 5px;
+    }
+    .skills-icons svg{
+        width: 25px;
+        height: 25px;
+    }
+    .box-projects .grid-box {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .box-contact {
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+    }
+    #contact form {
+        width: 100%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-group input#fname,
+    .input-group input#email,
+    .input-group input#asunto,
+    .input-group textarea {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: 100%;
+    }
+    .containerEtiqueta h2 {
+        font-size: small;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-section {
+        width: 100%;
+        margin-bottom: 15px;
     }
 }
